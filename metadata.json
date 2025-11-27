@@ -1,0 +1,5 @@
+{
+  "name": "OmniPhys: Particle Sandbox",
+  "description": "An interactive particle physics sandbox exploring standard, quantum, and open-system thermodynamic models.",
+  "requestFramePermissions": []
+}
