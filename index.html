@@ -1,46 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OmniPhys: Physics Simulator</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      body {
-        margin: 0;
-        background-color: #0f172a; /* Slate 900 */
-        color: #e2e8f0; /* Slate 200 */
-        font-family: 'Inter', sans-serif;
-      }
-      /* Custom scrollbar for dark theme */
-      ::-webkit-scrollbar {
-        width: 8px;
-        height: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #1e293b; 
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #475569; 
-        border-radius: 4px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #64748b; 
-      }
-    </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="Interactive charged-particle physics: Lorentz force, cyclotron motion, E×B drift, mass spectrometry, Rutherford scattering and a Standard-Model particle zoo." />
+    <meta name="theme-color" content="#04060c" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2714%27 fill=%27none%27 stroke=%27%2367e8f9%27 stroke-width=%272.5%27/%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%274%27 fill=%27%23fde68a%27/%3E%3C/svg%3E" />
+    <title>OmniPhys Particle Sandbox</title>
+  </head>
   <body>
     <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
-</body>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
