@@ -16,5 +16,8 @@ export default defineConfig({
   },
   build: {
     chunkSizeWarningLimit: 1200,
+    // lucide-react's barrel opens ~1500 icon files; cap parallel reads so
+    // small file-descriptor limits (Cloudflare builds) don't hit EMFILE.
+    rollupOptions: { maxParallelFileOps: 100 },
   },
 });
